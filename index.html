@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="testing.css">
+    <style>
+        header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10%;
+    background-color:rgb(12, 12, 12);
+    box-shadow: 0px 0px 5px 5px black;
+    
+}
+.logo{
+    color: red;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-style: italic;
+    font-family:"Pacifico";
+    padding: 0px;
+    margin: 0px;
+    font-size: 100px;
+    letter-spacing: 3px;
+}
+a{
+    text-decoration: none;
+    color: white
+}
+link{
+    list-style: none;
+    
+}
+.link li{
+    display:inline-block;
+    padding: 8px 55px ;
+    font-size: 30px;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: initial;
+}
+.link li a.active{
+    color: red;
+    
+}
+.link li a:hover{
+    color: rgb(255, 0, 0);
+    transition: 1s;
+}
+.banner{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTYZV2_2_DUhOyYo5BkyhTZu8DfIR1HONOqA&s");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 8px 8px rgb(255, 255, 255)
+
+    
+}
+div h1{
+    color: rgb(5, 5, 5);
+    position: absolute;
+    top: 310px;
+    left:860px;
+    font-size: xx-large;
+}
+div h3{
+    color: black;
+    position: absolute;
+    top: 370px;
+    left: 980px;
+}
+.photo{
+    height: 290px;
+    width: 290px;
+    background-color: none;
+    background-image:url("file:///C:/Users/Hp/Desktop/VINOTH%20KUMAR/final%20project/summa.png");
+    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 500px ;
+    box-shadow: 0 0 8px 8px black;
+    position: relative;
+    left: 900px;
+    top:20px;
+}
+
+button{
+    height: 50px;
+    width: 100px;
+   border-radius: 50px;
+    position: relative;
+    left: 1000px;
+    top:130px;
+}
+button:hover{
+    background-color: black;
+    color:red;
+}
+    </style>
+</head>
+<body>
+   <header>
+       <div class="logo">VK</div> 
+        <vk>
+            <ul class="link">
+                <li><a  class="active" href="file:///C:/Users/Hp/testing.html">Home</a></li>
+                <li><a href="file:///C:/Users/Hp/Pictures/Screenshots/about%20me.png">About</a></li>
+                <li><a  href="file:///C:/Users/Hp/Desktop/VINOTH%20KUMAR/Project.tools/Figma/project%201.png">Project</a></li>
+                <li><a href="file:///C:\Users\Hp\Pictures\Screenshots\Screenshot 2025-09-02 100927.png">Contact</a></li>
+            </ul>
+        </vk>
+        
+    </header>
+    <div class="banner">
+        <h1>Hi! I'am R.VinothKumar</h1>
+        <h3>UI/UX Designer</h3>
+            <div class="photo"></div>
+        <button id="resumeBtn">Resume</button>
+    </div>
+    <script>
+      document.getElementById("resumeBtn").addEventListener("click",function resume(){
+      var link=document.createElement("a");
+        link.href="file:///C:/Users/Hp/Desktop/VINOTH%20KUMAR/final%20project/Copy%20of%20Black%20and%20White%20Professional%20Simple%20Resume_20250901_194143_0000.png";
+        link.download="MyProject.png";
+        link.click();  
+      });
+    </script>
+</body>
+</html>
